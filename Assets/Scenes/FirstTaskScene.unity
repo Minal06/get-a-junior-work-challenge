@@ -364,7 +364,7 @@ MonoBehaviour:
   spawnPositionY: 0.6
   spawnPositionZ: 5
   respawnDelayMin: 2
-  respawnDelayMax: 10
+  respawnDelayMax: 4
 --- !u!4 &1174375278
 Transform:
   m_ObjectHideFlags: 0

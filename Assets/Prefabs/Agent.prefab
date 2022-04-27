@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7420026536590658327}
   - component: {fileID: 7420026536590658326}
   - component: {fileID: 7420026536590658313}
+  - component: {fileID: -2081056203429820083}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Agent
@@ -96,3 +97,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2081056203429820083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420026536590658312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec1dd284271d1841af0b21c607ca407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  latestDirectionChangeTime: 0
+  directionChangeTime: 3
+  characterVelocity: 2
+  valueY: 0.6
