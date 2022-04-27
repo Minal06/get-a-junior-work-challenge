@@ -14,6 +14,8 @@ public class SpawnManager : MonoBehaviour
 
     ObjectPoolingManager objectPoolingManager;
 
+    RandomMovement randomMovement;
+
     private void Start()
     {
         objectPoolingManager = ObjectPoolingManager.SharedInstance;
