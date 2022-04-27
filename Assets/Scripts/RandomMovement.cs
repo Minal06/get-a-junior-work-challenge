@@ -15,12 +15,11 @@ public class RandomMovement : MonoBehaviour
     void Start()
     {
         latestDirectionChangeTime = 0f;
-        calcuateNewMovementVector();
+        CalcuateNewMovementVector();
     }
 
-    void calcuateNewMovementVector()
-    {
-        //create a random direction vector with the magnitude of 1, later multiply it with the velocity of the enemy
+    void CalcuateNewMovementVector()
+    {        
         movementDirection = new Vector3(Random.Range(-1.0f, 1.0f),valueY, Random.Range(-1.0f, 1.0f)).normalized;
         movementPerSecond = movementDirection * characterVelocity;
     }
@@ -31,7 +30,7 @@ public class RandomMovement : MonoBehaviour
         if (Time.time - latestDirectionChangeTime > directionChangeTime)
         {
             latestDirectionChangeTime = Time.time;
-            calcuateNewMovementVector();
+            CalcuateNewMovementVector();
         }
 
         //move enemy: 
