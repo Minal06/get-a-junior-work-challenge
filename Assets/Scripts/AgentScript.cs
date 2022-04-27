@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AgentScript : MonoBehaviour
-{
-    RandomMovement randomMovement;
+{    
+    [SerializeField] int healthAmount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +18,11 @@ public class AgentScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        randomMovement.CalcuateNewMovementVector();
-
-        if (other.tag == "Agent")
+    void OnCollisionEnter(Collision col)
+    {   
+        if (col.gameObject.tag == "Agent")
         {
-            
+            Debug.Log(this.gameObject.name + "Lost 1 health");            
         }
     }
     
