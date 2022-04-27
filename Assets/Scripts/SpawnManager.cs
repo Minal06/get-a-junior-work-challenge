@@ -28,6 +28,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnAgentFromPool()
     {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnPositionX, spawnPositionX), spawnPositionY, Random.Range(-spawnPositionZ, spawnPositionZ));
-               
+        
+        objectPoolingManager.SpawnFromPool("Agent", spawnPos, Quaternion.identity);      
     }
 }
