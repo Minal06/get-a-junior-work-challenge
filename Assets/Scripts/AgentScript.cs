@@ -15,15 +15,25 @@ public class AgentScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CheckIsDead();
     }
 
     void OnCollisionEnter(Collision col)
     {   
         if (col.gameObject.tag == "Agent")
         {
-            Debug.Log(this.gameObject.name + "Lost 1 health");            
+            healthAmount -= 1;
+
+            Debug.Log(this.gameObject.name + "Lost 1 health. Healt left = " + healthAmount) ;
+            
         }
     }
     
+    void CheckIsDead()
+    {
+        if (healthAmount < 1)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 }
