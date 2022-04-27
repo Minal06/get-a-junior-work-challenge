@@ -12,8 +12,11 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] float respawnDelayMin;
     [SerializeField] float respawnDelayMax;
 
+    ObjectPoolingManager objectPoolingManager;
+
     private void Start()
     {
+        objectPoolingManager = ObjectPoolingManager.SharedInstance;
         SpawnAgents();
     }
 
