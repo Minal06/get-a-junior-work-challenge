@@ -13,5 +13,27 @@ public class UIScene : MonoBehaviour
         string GetData();
     }
 
-   
+    public GameObject InfoPopUp;
+
+    protected InfoContent m_CurrentContent;
+
+    private void Awake()
+    {
+        Instance = this;
+        InfoPopUp.SetActive(false);
+
+    }
+
+    private void OnDestroy()
+    {
+        Instance = null;
+    }
+
+    private void Update()
+    {
+        if (m_CurrentContent == null)
+            return;
+
+    }
+
 }

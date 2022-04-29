@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AgentScript : MonoBehaviour
 {    
-    [SerializeField] int healthAmount;
+    public int healthAmount;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class AgentScript : MonoBehaviour
         {
             healthAmount -= 1;
 
-            Debug.Log(this.gameObject.name + "Lost 1 health. Healt left = " + healthAmount) ;
+            //Debug.Log(this.gameObject.name + "Lost 1 health. Healt left = " + healthAmount) ;
             
         }
     }
@@ -35,7 +35,7 @@ public class AgentScript : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
-    }
+    }   
 
     public virtual string GetName()
     {

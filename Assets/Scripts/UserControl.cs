@@ -26,8 +26,7 @@ public class UserControl : MonoBehaviour
                 var agentScript = hit.collider.GetComponent<AgentScript>();
                 m_selected = agentScript;
 
-                var InfoContent = hit.collider.GetComponent<UIScene.InfoContent>();
-                UIScene.Instance.SetNewInfoContent(InfoContent);
+                Debug.Log(m_selected.GetComponent<AgentScript>().healthAmount);
             }
 
 
@@ -45,19 +44,21 @@ public class UserControl : MonoBehaviour
         }
     }
 
-    void PrintName(GameObject agent)
+    void PrintName(GameObject obj)
     {
-        print(agent.name);
+        print(obj.name);
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            HandleSelection();
+        if (Input.GetMouseButtonDown(0)) 
+        {               
+            HandleSelection();            
         }
-
-        MarkerHandling();
+        if(gameObject.tag == "Agent")
+        {
+            MarkerHandling();
+        }        
     }
 
     void MarkerHandling()
