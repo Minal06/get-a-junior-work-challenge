@@ -36,4 +36,14 @@ public class AgentScript : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+    public virtual string GetName()
+    {
+        return "Unit";
+    }
+
+    public virtual string GetData()
+    {
+        return "";
+    }
 }

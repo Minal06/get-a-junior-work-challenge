@@ -877,8 +877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4a7229848c8eb4ba9e03ad464e6a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCamera: {fileID: 0}
-  Marker: {fileID: 0}
+  gameCamera: {fileID: 963194227}
+  Marker: {fileID: 79681411333468373, guid: 971fb7904ee1df546892bf8de97abf2c, type: 3}
 --- !u!4 &1688176449
 Transform:
   m_ObjectHideFlags: 0
