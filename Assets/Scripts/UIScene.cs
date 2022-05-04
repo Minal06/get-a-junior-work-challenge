@@ -24,16 +24,20 @@ public class UIScene : MonoBehaviour
 
     }
 
-    private void OnDestroy()
+    /*private void OnDestroy()
     {
         Instance = null;
-    }
+    }*/
 
     private void Update()
     {
         if (m_CurrentContent == null)
             return;
+    }
 
+    public void ShowPopUpInfo()
+    {
+  //      InfoPopUp.name.text = m_CurrentContent
     }
 
 }

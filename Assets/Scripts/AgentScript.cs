@@ -39,11 +39,6 @@ public class AgentScript : MonoBehaviour
 
     public virtual string GetName()
     {
-        return "Unit";
-    }
-
-    public virtual string GetData()
-    {
-        return "";
-    }
+        return gameObject.name;
+    }    
 }
