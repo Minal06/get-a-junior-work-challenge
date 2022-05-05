@@ -5,14 +5,11 @@ using UnityEngine;
 public class CountingLogicTask : MonoBehaviour
 {
     int i = 101;
-    // Start is called before the first frame update
-    void Start()
+      
+
+    public void StartCounting()
     {
         InvokeRepeating("CountDownFrom100", 0, 0.5f);
-    }
-    private void Update()
-    {
-        
     }
 
     void CountDownFrom100()
@@ -20,20 +17,20 @@ public class CountingLogicTask : MonoBehaviour
         if (i > 0)
         {
             i--;
-        }
-        Debug.Log(i);
+            Debug.Log(i);
 
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            Debug.LogWarning("Marco Polo");
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                Debug.LogWarning("Marco Polo");
+            }
+            else if (i % 3 == 0)
+            {
+                Debug.LogWarning("Marco");
+            }
+            else if (i % 5 == 0)
+            {
+                Debug.LogWarning("Polo");
+            }
         }        
-        else if (i % 3 == 0)
-        {
-            Debug.LogWarning("Marco");
-        }
-        else if (i % 5 == 0)
-        {
-            Debug.LogWarning("Polo");
-        }
     }
 }
