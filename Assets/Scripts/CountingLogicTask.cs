@@ -19,7 +19,7 @@ public class CountingLogicTask : MonoBehaviour
             i--;
             Debug.Log(i);
 
-            if (i % 3 == 0 && i % 5 == 0)
+            if (i % 15 == 0)
             {
                 Debug.LogWarning("Marco Polo");
             }
