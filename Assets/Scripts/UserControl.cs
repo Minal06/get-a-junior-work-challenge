@@ -10,8 +10,9 @@ public class UserControl : MonoBehaviour
 
     [Header("InfoPanel")]
     public GameObject InfoPopUp;
-    [SerializeField] GameObject healthCount3;
-    [SerializeField] GameObject healthCount2;
+    //[SerializeField] GameObject healthCount3;
+    //[SerializeField] GameObject healthCount2;
+    [SerializeField] Text lifeCount;
 
     private AgentScript m_selected = null;
     
@@ -82,7 +83,8 @@ public class UserControl : MonoBehaviour
         else
         {
             InfoPopUp.SetActive(true);
-            InfoPopUp.GetComponentInChildren<Text>().text = m_selected.GetName();                              
+            InfoPopUp.GetComponentInChildren<Text>().text = m_selected.GetName();
+            lifeCount.text = m_selected.healthAmount + " lifes";
         }
     }
 }
