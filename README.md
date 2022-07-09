@@ -11,9 +11,9 @@ It's mainly code related, with a few features from Unity itself.
 ### First task:
 
 * I create platform, where NPC are randomly spawning and moving
-* Programmed a behaviour where if two npcs collide with each other, they are losing 1 life from their total life pool of 3.
-* If their total life reaches 0 they dissapear from the map. 
-* basic information window, you can also click on NPC and check their current HP, I also added a graphical representation of marked unit.
+* Programmed a behaviour where if two npcs collide with each other, they are losing 1 life from their total life pool of 3
+* If their total life reaches 0 they dissapear from the map 
+* basic information window, you can also click on NPC and check their current HP, I also added a graphical representation of marked unit
 
 ##### Gameplay
 ![cloneWars](https://user-images.githubusercontent.com/94176489/178111901-983934d5-0462-4af3-820d-ac277a34d2c3.gif)
@@ -21,10 +21,11 @@ It's mainly code related, with a few features from Unity itself.
 
 ### Second Task:
 
-There was also prepared Optimization folder. Scene there spawn a lot of different game objects, that slow down game drastically.
+* Made a button that starts a functions which countsdown from 100 to 0 
+* When there is a number divided by 5 or 3 or both - Debug.Log(something)
 
-My task was to optimalize scene with use of Unity Profiler.
-With *Profiler.BeginSample();* and *EndSample();* I manage to find and solve the issue in the **OptimUnit** script.
+For this code please check the **CountingLogicTask** script.
 
-##### Optimalization task
-![Optimalization](https://user-images.githubusercontent.com/94176489/177877824-f5b20e70-a271-4342-acd7-fa1c23539a53.gif)
+
+ 
+
