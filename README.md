@@ -21,7 +21,7 @@ It's mainly code related, with a few features from Unity itself.
 
 ### Second Task:
 
-* Made a button that starts a functions which countsdown from 100 to 0 
+* Made a button that starts a function which counts down from 100 to 0 
 * When there is a number divided by 5 or 3 or both - Debug.Log(something)
 
 For this code please check the **CountingLogicTask** script.
