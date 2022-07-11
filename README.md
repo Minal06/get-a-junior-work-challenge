@@ -10,8 +10,8 @@ It's mainly code related, with a few features from Unity itself.
 
 ### First task:
 
-* I create platform, where NPC are randomly spawning and moving
-* Programmed a behaviour where if two npcs collide with each other, they are losing 1 life from their total life pool of 3
+* I created platform, where NPC are randomly spawning and moving
+* Programmed a behaviour where if two npcs collide with each other, they are lose 1 life from their total life pool of 3
 * If their total life reaches 0 they dissapear from the map 
 * basic information window, you can also click on NPC and check their current HP, I also added a graphical representation of marked unit
 
